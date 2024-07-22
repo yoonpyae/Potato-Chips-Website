@@ -44,11 +44,11 @@ const swiperFav = new Swiper(".favorites_swiper", {
 
 /*=============== SHOW SCROLL UP ===============*/
 const scrollUp = () => {
-  const scrollUp = document.getElementById("scroll-up");
+  const scrollUpElement = document.getElementById("scroll-up");
 
-  this.scrollY >= 350
-    ? scrollUp.classList.add("show-scroll")
-    : scrollUp.classList.remove("show-scroll");
+  window.scrollY >= 350
+    ? scrollUpElement.classList.add("show-scroll")
+    : scrollUpElement.classList.remove("show-scroll");
 };
 
 window.addEventListener("scroll", scrollUp);
